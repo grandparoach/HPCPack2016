@@ -468,7 +468,7 @@
             "value": "[variables('subnetRef')]"
           },
           "vmName": {
-            "value": "[concat(parameters('computeNodeNamePrefix'), string(copyIndex(4)),'v')]"
+            "value": "[concat(parameters('computeNodeNamePrefix'), string(copyIndex(1)),'v')]"
           },
           "vmSize": {
             "value": "[parameters('computeNodeVMSize')]"
