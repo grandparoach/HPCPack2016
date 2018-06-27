@@ -449,7 +449,7 @@
     {
       "apiVersion": "2017-05-10",
       "type": "Microsoft.Resources/deployments",
-      "name": "[concat('create', parameters('computeNodeNamePrefix'), padLeft(string(copyIndex()), 3, '0'))]",
+      "name": "[concat('create', parameters('computeNodeNamePrefix'), string(copyIndex(1)),'v')]",
       "dependsOn": [
         "cnAvailabilitySetCopy"
       ],
